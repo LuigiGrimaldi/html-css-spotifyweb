@@ -5,11 +5,11 @@
 }
 
 /* #regio debug */
-.debug #app-header{
+.debug #app-top{
     background-color: brown;
 }
 
-.debug #app-footer{
+.debug #app-bottom{
     background-color: chartreuse;
 }
 
@@ -20,41 +20,46 @@
 .debug .sidebar-bottom{
     background-color: rgb(37, 24, 4);
 }
+
+.debug .content{
+    background-color: blue;
+}
 /* #endregion debug */
 
 
-/* #region header */
-    #app-header{
+/* #region app-top */
+    #app-top{
         height: calc(100vh - 70px);
         display: flex;
     }
 
-    #app-header > .sidebar{
+    #app-top > .sidebar{
         width: 150px;
     }
 
-    #app-header .sidebar-top{
+    #app-top .sidebar-top{
         height: calc(100% - 70px);
     }
 
-    #app-header .sidebar-bottom{
+    #app-top .sidebar-bottom{
         height: 70px;
     }
 
-
-/* #endregion header */
-
-
-
-/* #region main */
-/* #endregion main */
+    #app-top .content{
+        width: calc(100% - 70px);
+    }
 
 
-/* #region footer */
-    #app-footer{
+/* #endregion app-top */
+
+
+
+
+/* #region app-bottom */
+    #app-bottom{
         height: 70px;
     }
-/* #endregion footer */
+/* #endregion app-bottom */
 
 /* #region utilities */
     .d-flex{
