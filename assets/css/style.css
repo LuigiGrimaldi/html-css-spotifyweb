@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* #regio debug */
+.debug #app-header{
+    background-color: brown;
+}
+
+.debug #app-footer{
+    background-color: chartreuse;
+}
+
+.debug .sidebar-top{
+    background-color: blanchedalmond;
+}
+
+.debug .sidebar-bottom{
+    background-color: rgb(37, 24, 4);
+}
+/* #endregion debug */
+
+
+/* #region header */
+    #app-header{
+        height: calc(100vh - 70px);
+        display: flex;
+    }
+
+    #app-header > .sidebar{
+        width: 150px;
+    }
+
+    #app-header .sidebar-top{
+        height: calc(100% - 70px);
+    }
+
+    #app-header .sidebar-bottom{
+        height: 70px;
+    }
+
+
+/* #endregion header */
+
+
+
+/* #region main */
+/* #endregion main */
+
+
+/* #region footer */
+    #app-footer{
+        height: 70px;
+    }
+/* #endregion footer */
+
+/* #region utilities */
+    .d-flex{
+        display: flex;
+    }
+
+    .col-dir{
+        flex-direction: column;
+    }
+/* #endregion utilities */
