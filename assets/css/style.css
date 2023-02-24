@@ -34,7 +34,7 @@
     }
 
     #app-top > .sidebar{
-        width: 150px;
+        width: 70px;
     }
 
     #app-top .sidebar-top{
@@ -70,3 +70,9 @@
         flex-direction: column;
     }
 /* #endregion utilities */
+
+/* responsive */
+
+@media screen and ( max-width: 768px ) {
+    
+}
