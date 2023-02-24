@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --s-dark_gray: #282828;
+    --s-content: #141922;
+    --s-sidebar: #000000;
+    --s-banner: #080b12;
+    --s-playlist: #a3a3a3;
+
+
+}
+
 /* #regio debug */
 .debug #app-top{
     background-color: brown;
@@ -24,6 +34,12 @@
 .debug .content{
     background-color: blue;
 }
+
+.debug [class^="col-"]{
+    height: 200px;
+    background-color: bisque;
+    border: 1px dashed;
+}
 /* #endregion debug */
 
 
@@ -34,19 +50,20 @@
     }
 
     #app-top > .sidebar{
-        width: 70px;
+        width: 40px;
     }
 
     #app-top .sidebar-top{
-        height: calc(100% - 70px);
+        height: calc(100% - 40px);
     }
 
     #app-top .sidebar-bottom{
-        height: 70px;
+        height: 40px;
     }
 
     #app-top .content{
-        width: calc(100% - 70px);
+        overflow-y: auto;
+        width: calc(100% - 40px);
     }
 
 
@@ -66,13 +83,33 @@
         display: flex;
     }
 
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .col-dir{
         flex-direction: column;
     }
+
+    .col-6{
+        width: calc(100% / 12 * 6);
+    }
+
+
 /* #endregion utilities */
 
 /* responsive */
 
-@media screen and ( max-width: 768px ) {
+@media screen and ( min-width: 768px ) {
+    #app-top > .sidebar{
+        width: 220px;
+    }
     
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-3{
+        width: calc(100% / 12 * 3);
+    }
 }
