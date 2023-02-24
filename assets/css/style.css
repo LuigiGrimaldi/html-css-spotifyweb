@@ -118,9 +118,15 @@ img{
         display: flex;
     }
 
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+
     .row{
         display: flex;
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .col-dir{
@@ -148,7 +154,7 @@ img{
     }
 
     .col-6{
-        width: calc(100% / 12 * 6);
+        width: calc(90% / 12 * 6);
     }
 
     .col-7{
