@@ -99,7 +99,7 @@ img {
     color: white;
 }
 
-.content .menu{
+.content .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,11 +130,11 @@ img {
     margin-left: 11.5rem;
 }
 
-.card > .cover-text{
+.card>.cover-text {
     margin-top: 0.5rem;
 }
 
-.card > .subtitle{
+.card>.subtitle {
     margin-top: 0.5rem;
 }
 
@@ -149,7 +149,33 @@ img {
 #app-bottom {
     background-color: var(--s-dark_gray);
     height: 70px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.sidebar-top ul {
+    margin: 0.4rem;
+    list-style: none;
+}
+
+
+.sidebar-top li {
+    margin-bottom: 0.4rem;
+}
+
+.sidebar-top a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-top .search {
+    margin-left: 0.1rem;
+}
+
+.sidebar-top .item {
+    margin-left: 0.2rem;
+}
+
 
 /* #endregion app-bottom */
 
@@ -162,6 +188,15 @@ img {
 .container {
     width: 90%;
     margin: auto;
+}
+
+.container-sb {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
